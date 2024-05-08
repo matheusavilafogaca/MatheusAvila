@@ -1,0 +1,71 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Henrique de Avila Fogaça - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="fotoPerfil">
+        <img src="img/foto.jpeg" alt="Foto de Matheus">
+        <div>
+            <h1>Oi, meu nome é Matheus</h1>
+            <h3>Este é meu portfólio, onde irei apresentar alguns trabalhos de minha autoria. </h3>
+        </div>
+    </div>
+    <nav>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portifolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<main>
+    <section id="sobre" class="sobre">
+        <h2 id="profissional">O Profissional por Trás do Portfólio!</h2>
+        <p id="textProfissional">Aprecio a Tecnologia, liderança e comunicação assertiva.</p>
+        <a href="img/curriculo.pdf" download="curriculo.pdf" class="botao">Baixar Currículo (PDF)</a>
+    </section>
+    <section id="formacao" class="formacao">
+        <h2 id="tituliformacao">Formação</h2>
+        <p id="f1">Análise e Desenvolvimento de Sistemas - UNINTER (Cursando)</p>
+        <p id="f2">Tecnologia em Logística - Universidade Tuiuti do Paraná (Concluído 2016)</p>
+    </section>
+    <section id="portifolio" class="portifolio">
+        <h2 id="port">Portfólio</h2>
+        <p id="port1">Aqui estão alguns projetos em que trabalhei:</p>
+    </section>
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Preencha o formulário abaixo para entrar em contato comigo:</p>
+        <form action="enviar_contato.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Matheus Avila. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    // Função para rolar suavemente até a seção correspondente
+    function scrollToSection(id) {
+        const section = document.getElementById(id);
+        if (section) {
+            window.scrollTo({ top: section.offsetTop, behavior: 'smooth' });
+        }
+    }
+</script>
+
+</body>
+</html>
